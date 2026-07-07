@@ -1,10 +1,8 @@
 package com.moliyy.exotic_star;
 
-import com.ibm.icu.impl.UResource;
+import com.moliyy.exotic_star.ModBlock.ModBlocks;
 import com.moliyy.exotic_star.ModItem.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.fml.common.EventBusSubscriber;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -32,7 +30,13 @@ public class Exotic_Star {
 
         modEventBus.addListener(this::addCreative);
 
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+
+
+
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
@@ -43,7 +47,11 @@ public class Exotic_Star {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.WAKAMO_INGOT);
+            event.accept(ModItems.BLUE_STEEL);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.BLUE_STEEL_BLOCK);
+            event.accept(ModBlocks.BLUE_STEEL_ORE);
         }
     }
 
