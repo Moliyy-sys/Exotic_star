@@ -1,0 +1,25 @@
+{
+  "itemGroup.exotic_star": "奇异星",
+
+  "block.exotic_star.example_block": "Example Block",
+
+
+
+
+  "item.exotic_star.blue_steel": "蓝钢",
+  "item.exotic_star.indigo_scrap": "靛紫碎片",
+  "item.exotic_star.raw_blue_steel": "粗蓝钢",
+  "item.exotic_star.wakamo_ingot": "若藻锭",
+  "item.exotic_star.blue_steel_nugget": "蓝钢粒",
+
+
+
+
+  "exotic_star.configuration.title": "奇异星模组配置",
+  "exotic_star.configuration.section.exotic_star.common.toml": "奇异星模组配置",
+  "exotic_star.configuration.section.exotic_star.common.toml.title": "奇异星模组配置",
+  "exotic_star.configuration.items": "物品列表",
+  "exotic_star.configuration.logDirtBlock": "记录泥土方块",
+  "exotic_star.configuration.magicNumberIntroduction": "魔法数字说明",
+  "exotic_star.configuration.magicNumber": "魔法数字"
+}

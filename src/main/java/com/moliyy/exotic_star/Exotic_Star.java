@@ -1,6 +1,8 @@
 package com.moliyy.exotic_star;
 
 import com.ibm.icu.impl.UResource;
+import com.moliyy.exotic_star.ModItem.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
 import org.slf4j.Logger;
@@ -30,6 +32,7 @@ public class Exotic_Star {
 
         modEventBus.addListener(this::addCreative);
 
+        ModItems.register(modEventBus);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
@@ -39,7 +42,9 @@ public class Exotic_Star {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.WAKAMO_INGOT);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

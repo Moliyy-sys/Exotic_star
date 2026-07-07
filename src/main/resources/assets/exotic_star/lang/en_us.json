@@ -1,0 +1,25 @@
+{
+  "itemGroup.exotic_star": "Exotic_Star Mod Tab",
+
+  "block.exotic_star.example_block": "Example Block",
+
+
+
+
+  "item.exotic_star.blue_steel": "BLUE_STEEL",
+  "item.exotic_star.indigo_scrap": "INDIGO_SCRAP",
+  "item.exotic_star.raw_blue_steel": "RAW_BLUE_STEEL",
+  "item.exotic_star.wakamo_ingot": "WAKAMO_INGOT",
+  "item.exotic_star.blue_steel_nugget": "BLUE_STEEL_NUGGET",
+
+
+
+
+  "exotic_star.configuration.title": "Exotic_Star Mod Configs",
+  "exotic_star.configuration.section.exotic_star.common.toml": "Exotic_Star Mod Configs",
+  "exotic_star.configuration.section.exotic_star.common.toml.title": "Exotic_Star Mod Configs",
+  "exotic_star.configuration.items": "Item List",
+  "exotic_star.configuration.logDirtBlock": "Log Dirt Block",
+  "exotic_star.configuration.magicNumberIntroduction": "Magic Number Text",
+  "exotic_star.configuration.magicNumber": "Magic Number"
+}
