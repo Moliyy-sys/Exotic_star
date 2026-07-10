@@ -1,0 +1,13 @@
+{
+  "type":"minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "exotic_star:blue_steel_block"
+    }
+  ],
+  "result": {
+    "id": "exotic_star:blue_steel",
+    "count": 9
+  }
+}

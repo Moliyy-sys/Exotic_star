@@ -1,6 +1,7 @@
 package com.moliyy.exotic_star;
 
 import com.moliyy.exotic_star.ModBlock.ModBlocks;
+import com.moliyy.exotic_star.ModItem.ModCreativeModeTab;
 import com.moliyy.exotic_star.ModItem.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -29,10 +30,11 @@ public class Exotic_Star {
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
-
+        ModCreativeModeTab.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
 
 
 
